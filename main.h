@@ -9,5 +9,7 @@ int print_string(va_list value);
 int print_pct(void);
 int print_i(va_list value);
 int print_d(va_list value);
+int print_b(va_list value);
+int print_u(va_list value);
 
 #endif
