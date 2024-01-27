@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * print_XS - prints hexadecimal(upper)
+ * print_xs - prints hexadecimal(lower)
  *
  * @value: va_list rgument
  *
  * Return: int
  */
 
-int print_XS(unsigned int num)
+int print_xs(unsigned long int num)
 {
-	int i;
-	int counter = 0;
-	int *hex;
-	unsigned int holder;
+	long int i;
+	long int counter = 0;
+	long int *hex;
+	unsigned long int holder;
 
 	holder = num;
 
@@ -23,7 +23,7 @@ int print_XS(unsigned int num)
 		counter++;
 	}
 	counter++;
-	hex = malloc(sizeof(int) * counter);
+	hex = malloc(sizeof(long int) * counter);
 
 	for (i = 0; i < counter; i++)
 	{
@@ -39,7 +39,7 @@ int print_XS(unsigned int num)
 		}
 		else
 		{
-			_putchar(hex[i] - 10 + 'A');
+			_putchar(hex[i] - 10 + 'a');
 		}
 	}
 	free(hex);

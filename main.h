@@ -17,5 +17,7 @@ int print_x(va_list value);
 int print_X(va_list value);
 int print_XS(unsigned int num);
 int print_S(va_list value);
+int print_xs(unsigned long int num);
+int print_p(va_list value);
 
 #endif
