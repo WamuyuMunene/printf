@@ -15,5 +15,7 @@ int print_u(va_list value);
 int print_o(va_list value);
 int print_x(va_list value);
 int print_X(va_list value);
+int print_XS(unsigned int num);
+int print_S(va_list value);
 
 #endif
