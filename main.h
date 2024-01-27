@@ -13,5 +13,7 @@ int print_d(va_list value);
 int print_b(va_list value);
 int print_u(va_list value);
 int print_o(va_list value);
+int print_x(va_list value);
+int print_X(va_list value);
 
 #endif
