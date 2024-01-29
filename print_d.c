@@ -10,33 +10,18 @@
 
 int print_d(va_list value)
 {
-	int i = 0;
 	int num;
-	int counter;
-	int digit;
+	int counter = 0;
 
 	num = va_arg(value, int);
 
-	if (num < 0)
+	if (num >= 0)
 	{
-		_putchar('-');
-		num = -num;
-		i++;
+		_putchar(' ');
+		counter++;
 	}
 
-	counter = num;
+	counter += print_dp(num);
 
-	do {
-		counter = counter / 10;
-		i++;
-	} while (counter > 0);
-
-	while (i > 0)
-	{
-		digit = num % 10;
-		_putchar(digit + '0');
-		num = num / 10;
-		i--;
-	}
-	return (i);
+	return (counter);
 }
