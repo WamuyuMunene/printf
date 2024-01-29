@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdarg.h>
+#include <math.h>
 #include <stdlib.h>
 #include<limits.h>
 
@@ -28,6 +29,8 @@ int print_xs(unsigned long int num);
 int print_p(va_list value);
 int print_r(va_list value);
 int print_R(va_list value);
-int main(void);
+int print_f(va_list value);
+int print_dp(int num);
+int print_fp(double num, int precision);
 
 #endif
