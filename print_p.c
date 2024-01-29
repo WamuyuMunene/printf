@@ -20,18 +20,18 @@ int print_p(va_list value)
 
 	if (p == NULL)
 	{
-		for(i = 0; str[i] != '\0'; i++)
+		for (i = 0; str[i] != '\0'; i++)
 		{
 			_putchar(str[i]);
 		}
 		return (i);
 	}
-	
+
 	cast = (unsigned long int)p;
 	_putchar('0');
 	_putchar('x');
 
 	size = print_xs(cast);
-	
+
 	return (size + 2);
 }
