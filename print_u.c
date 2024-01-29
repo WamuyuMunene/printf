@@ -23,5 +23,5 @@ int print_u(va_list value)
 		num = num / 10;
 	} while (num > 0);
 
-	return (i);
+	return (i - 1);
 }
