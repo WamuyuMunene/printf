@@ -17,7 +17,7 @@ int print_c(va_list value)
 
 	if (str == '\0')
 	{
-		return (0);
+		return (1);
 	}
 	_putchar(str);
 	return (1);
