@@ -3,7 +3,7 @@
 /**
  * print_xs - prints hexadecimal(lower)
  *
- * @value: va_list rgument
+ * @num: unsigned long int
  *
  * Return: int
  */

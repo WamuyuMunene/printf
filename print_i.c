@@ -26,8 +26,7 @@ int print_i(va_list value)
 
 	counter = num;
 
-	do
-	{
+	do {
 		counter = counter / 10;
 		i++;
 	} while (counter > 0);

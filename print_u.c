@@ -16,8 +16,7 @@ int print_u(va_list value)
 
 	num = va_arg(value, unsigned int);
 
-	do
-	{
+	do {
 		i++;
 		digit = num % 10;
 		_putchar(digit + '0');
