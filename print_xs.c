@@ -24,7 +24,8 @@ int print_xs(unsigned long int num)
 	}
 	counter++;
 	hex = malloc(sizeof(long int) * counter);
-
+	if (hex == NULL)
+		return (0);
 	for (i = 0; i < counter; i++)
 	{
 		hex[i] = holder % 16;

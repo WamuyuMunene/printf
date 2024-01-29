@@ -18,11 +18,12 @@ int print_r(va_list value)
 
 	if (str == NULL)
 	{
-		str = "(nil)";
+		str = "(null)";
 	}
 	while (str[i] != '\0')
 	{
 		n++;
+		i++;
 	}
 
 	for (i = n - 1; i >= 0; i--)
