@@ -30,10 +30,10 @@ int print_s(va_list value)
 	else
 	{
 		n = strlen(str);
-		for (i = 0; i < n && str[i] != '\0'; i++)
+		for (i = 0; i < n; i++)
 		{
 			_putchar(str[i]);
 		}
-		return (n);
+		return (n - 1);
 	}
 }
