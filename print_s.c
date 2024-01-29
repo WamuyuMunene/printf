@@ -27,7 +27,7 @@ int print_s(va_list value)
 		}
 		return (n);
 	}
-	else
+	else if (str != NULL && str[i] != '\0')
 	{
 		n = strlen(str);
 		for (i = 0; i < n; i++)
