@@ -10,18 +10,41 @@
 
 int print_d(va_list value)
 {
+	int n = va_arg(value, int);
 	int num;
-	int counter = 0;
+	int last = n % 10;
+	int digit;
+	int exp = 1;
+	int i = 1;
 
-	num = va_arg(value, int);
+	n = n / 10;
+	num = n;
 
-	if (num >= 0)
+	if (last < 0)
 	{
-		_putchar(' ');
-		counter++;
+		_putchar('-');
+		num = -num;
+		n = -n;
+		last = -last;
+		i++;
 	}
-
-	counter += print_dp(num);
-
-	return (counter);
+	if (num > 0)
+	{
+		while (num / 10 != 0)
+		{
+			exp = exp * 10;
+			num = num / 10;
+		}
+		num = n;
+		while (exp > 0)
+		{
+			digit = num / exp;
+			_putchar(digit + '0');
+			num = num - (digit * exp);
+			exp = exp / 10;
+			i++;
+		}
+	}
+	_putchar(last + '0');
+	return (i);
 }
