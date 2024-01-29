@@ -11,7 +11,7 @@
 int print_p(va_list value)
 {
 	void *p;
-	char *str = "(null)";
+	char *str = "(nil)";
 	long int cast;
 	int i;
 	int size;
