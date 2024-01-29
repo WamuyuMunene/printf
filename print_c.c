@@ -6,7 +6,7 @@
  *
  * @value: va_list type
  *
- * Return: 1 or 0
+ * Return: 1
  */
 
 int print_c(va_list value)
