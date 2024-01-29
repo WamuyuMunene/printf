@@ -2,14 +2,14 @@
 #include <stdarg.h>
 
 /**
- * print_char - this prints type char using putchar
+ * print_c - this prints type char using putchar
  *
  * @value: va_list type
  *
  * Return: 1 or 0
  */
 
-int print_char(va_list value)
+int print_c(va_list value)
 {
 	char str;
 

@@ -2,11 +2,18 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stdlib.h>
+#include<limits.h>
+
+typedef struct format
+{
+	char *id;
+	int (*f)();
+} match;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int print_char(va_list value);
-int print_string(va_list value);
+int print_c(va_list value);
+int print_s(va_list value);
 int print_pct(void);
 int print_i(va_list value);
 int print_d(va_list value);
@@ -21,5 +28,6 @@ int print_xs(unsigned long int num);
 int print_p(va_list value);
 int print_r(va_list value);
 int print_R(va_list value);
+int main(void);
 
 #endif
