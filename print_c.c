@@ -15,10 +15,6 @@ int print_c(va_list value)
 
 	str = va_arg(value, int);
 
-	if (str == '\0')
-	{
-		return (1);
-	}
 	_putchar(str);
 	return (1);
 }
