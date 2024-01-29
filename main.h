@@ -1,9 +1,14 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stdarg.h>
-#include <math.h>
 #include <stdlib.h>
 #include<limits.h>
+
+/**
+ * format - structure to be used in custom printf
+ * @id: fomat specifier
+ * @f: function to call
+ */
 
 typedef struct format
 {
@@ -29,6 +34,5 @@ int print_xs(unsigned long int num);
 int print_p(va_list value);
 int print_r(va_list value);
 int print_R(va_list value);
-int print_f(va_list value);
 
 #endif
