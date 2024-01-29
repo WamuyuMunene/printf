@@ -5,7 +5,7 @@
 #include<limits.h>
 
 /**
- * format - structure to be used in custom printf
+ * struct format - structure to be used in custom printf
  * @id: fomat specifier
  * @f: function to call
  */
