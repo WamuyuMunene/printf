@@ -26,8 +26,6 @@ int print_X(va_list value)
 	}
 	counter++;
 	hex = malloc(sizeof(int) * counter);
-	if (hex == NULL)
-		return (0);
 	for (i = 0; i < counter; i++)
 	{
 		hex[i] = holder % 16;
