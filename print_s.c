@@ -19,7 +19,7 @@ int print_s(va_list value)
 	str = va_arg(value, char *);
 	if (str == NULL)
 	{
-		str = "(nil)";
+		str = "(null)";
 		n = strlen(str);
 		for (i = 0; i < n; i++)
 		{
@@ -34,6 +34,6 @@ int print_s(va_list value)
 		{
 			_putchar(str[i]);
 		}
-		return (i);
+		return (n);
 	}
 }
