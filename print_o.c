@@ -26,7 +26,8 @@ int print_o(va_list value)
 	}
 	counter++;
 	octal = malloc(sizeof(int) * counter);
-
+	if (octal == NULL)
+		return (0);
 	for (i = 0; i < counter; i++)
 	{
 		octal[i] = holder % 8;
