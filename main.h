@@ -34,6 +34,5 @@ int print_xs(unsigned long int num);
 int print_p(va_list value);
 int print_r(va_list value);
 int print_R(va_list value);
-int all_flags(const char *format, int *i)
 
 #endif
