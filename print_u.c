@@ -12,7 +12,7 @@ int print_u(va_list value)
 {
 	unsigned int n = va_arg(value, unsigned int);
 	int num;
-	int last = n % 10;
+	/*int last = n % 10;*/
 	int digit;
 	int exp = 1;
 	int i = 1;
